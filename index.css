@@ -1,0 +1,145 @@
+html, body {
+  height: 100%;
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  font-family: 'Nixie One', bold;
+}
+
+header {
+  height: 100px;
+  background-color: white;
+  margin: 0;
+  padding: 20px 50px;
+}
+
+header > nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+video {
+  width: 100%;
+  height: 100%;
+}
+
+main {
+  padding-bottom: 50px;
+}
+
+.banner-caption {
+  margin-bottom: 20px;
+}
+
+.app-store {
+  max-width: 180px;
+}
+
+.video-message {
+  color: white;
+  height: 240px;
+  width: 50%;
+  text-align: center;
+}
+
+.video-message h3 {
+  font-family: 'La Belle Aurore', cursive;
+  font-size: 100px;
+  line-height: 110px;
+  margin-bottom: 15px;
+}
+
+.video-message p {
+  font-family: 'Nixie One', bold;
+  font-size: 28px;
+  font-weight: 100;
+  line-height: 26px;
+}
+
+.video-container {
+  z-index: -1;
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.banner {
+  height: 538px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.about-section, .icon-row {
+  background: white;
+  padding: 50px;
+  font-family: 'Nixie One', bold;
+}
+
+.about-text {
+  text-align: center;
+  margin: 0 10%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.about-section h3 {
+  padding: 25px 0;
+}
+
+.about-section p {
+  padding: 25px 0;
+  width: 80%;
+}
+
+.icon-row {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  padding: 0 20%;
+}
+
+.icon-set {
+  width: 300px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 10px;
+}
+
+.icons-section hr {
+  margin: 0 20%;
+  border-top: 1px solid black;
+}
+
+footer {
+  background: black;
+  height: 200px;
+  padding-top: 30px;
+  color: white;
+  font-family: 'Nixie One', bold;
+}
+
+.footer-links {
+  display: flex;
+  justify-content: space-between;
+  margin: 0 35%;
+}
+
+.footer-links a {
+  color: white;
+}
+
+.legal-links {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+

@@ -54,7 +54,7 @@
         </div>
         <div>
           <a>Facebook</a> | 
-          <a class="btn btn-primary">Download Now</a>
+          <a class="btn btn-primary" onclick="trackOutboundLink('http://meetbanana.com'); return false;">Download Now</a>
         </div>
       </nav>
     </header>
@@ -82,7 +82,7 @@
         <p class="banner-caption">
           Video chat with other gay males from your mobile phone.
         </p>
-        <a>
+        <a onclick="trackOutboundLink('http://meetbanana.com'); return false;">
           <img class="app-store" src="https://d2kfjaekmjmy1l.cloudfront.net/images/websites/public/app-store-black-on-color@2x-vUVAkYHUgzYCyeyfUGm8cda3C.png">
         </a>
       </div>
@@ -160,7 +160,7 @@
             Become more comfortable about who you are and help others feel
             the same way. You aren't alone, so explore!
           </p>
-          <a class="btn btn-primary">Download Now</a>
+          <a class="btn btn-primary" onclick="trackOutboundLink('http://meetbanana.com'); return false;">Download Now</a>
         </div>
       </div>
     </div>
@@ -170,7 +170,7 @@
         <a>About</a>
         <a>Stories</a>
         <a>Facebook</a>
-        <a>App Store</a>
+        <a onclick="trackOutboundLink('http://meetbanana.com'); return false;">App Store</a>
       </div>
       <div class="legal-links">
         <p>
@@ -190,5 +190,11 @@
     ga('create', 'UA-89131685-1', 'auto');
     ga('send', 'pageview');
 
+    let trackOutboundLink = function(url) {
+      ga('send', 'event', 'outbound', 'click', url, {
+        'transport': 'beacon',
+        'hitCallback': function(){document.location = url;}
+      });
+    }
   </script>
 </html>

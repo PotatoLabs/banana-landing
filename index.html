@@ -36,13 +36,18 @@
 
     <main role="main">
     <div class="video-container">
-      <video src="assets/guy.mp4"
+      <video
         preload="auto"
         muted
         autoplay
         no-controls
         poster="assets/poster.jpg"
         loop/>
+        <source src="assets/guy.mp4" type="video/mp4">
+        <source src="assets/guy.webm" type="video/webm">
+        <source src="assets/guy.ogv" type="video/ogg">
+        Your browser does not support HTML5 video.
+      </video>
     </div>
     <div class="banner">
       <div class="video-message">

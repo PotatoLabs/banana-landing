@@ -1,21 +1,21 @@
 html, body {
+  font-family: 'Nixie One', bold;
   height: 100%;
   margin: 0;
   padding: 0;
   width: 100%;
-  font-family: 'Nixie One', bold;
 }
 
 header {
-  height: 100px;
   background-color: white;
+  height: 100px;
   margin: 0;
   padding: 20px 50px;
 }
 
 header > nav {
-  display: flex;
   align-items: center;
+  display: flex;
   justify-content: space-between;
 }
 
@@ -25,9 +25,9 @@ header > nav {
 
 @media all and (min-width: 820px) {
   .video-container video {
-    width: 100%;
-    height: 100%;
     display: inline-block;
+    height: 100%;
+    width: 100%;
   }
 }
 
@@ -52,8 +52,8 @@ main {
 .video-message {
   color: white;
   height: 100%;
-  width: 100%;
   text-align: center;
+  width: 100%;
 }
 
 @media all and (min-width: 820px) {
@@ -84,14 +84,14 @@ main {
 }
 
 .video-container {
-  z-index: -1;
-  position: absolute;
-  left: 0;
-  right: 0;
-  background: url("assets/poster.png") center no-repeat;
   background-size: cover;
+  background: url("assets/poster.png") center no-repeat;
   height: 300px;
+  left: 0;
+  position: absolute;
+  right: 0;
   top: 100px;
+  z-index: -1;
 }
 
 @media all and (min-width: 820px) {
@@ -109,11 +109,11 @@ main {
 }
 
 .banner {
-  height: 299px;
-  width: 100%;
-  display: flex;
   align-items: center;
+  display: flex;
+  height: 299px;
   justify-content: center;
+  width: 100%;
 }
 
 @media all and (min-width: 820px) {
@@ -141,17 +141,14 @@ main {
 
 .about-section {
   padding: 0px;
-  @media screen (min-device-width: 481px) {
-    padding: 50px;
-  }
 }
 
 .about-text {
-  text-align: center;
-  margin: 0 7%;
+  align-items: center;
   display: flex;
   flex-direction: column;
-  align-items: center;
+  margin: 0 7%;
+  text-align: center;
 }
 
 @media all and (min-width: 481px) {
@@ -170,10 +167,10 @@ main {
 }
 
 .icon-row {
-  display: flex;
-  justify-content: space-around;
-  flex-direction: column;
   align-items: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
   padding: 0 20% 30px 20%;
 }
 
@@ -184,18 +181,18 @@ main {
 }
 
 .icon-set {
-  width: 300px;
-  display: flex;
-  justify-content: center;
-  flex-direction: column;
   align-items: center;
-  text-align: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
   padding: 0 10px;
+  text-align: center;
+  width: 300px;
 }
 
 .icons-section hr {
-  margin: 0 20%;
   border-top: 1px solid black;
+  margin: 0 20%;
 }
 
 .summary-section {
@@ -203,12 +200,12 @@ main {
 }
 
 .summary-background {
-  display: flex;
-  padding: 40px;
-  justify-content: center;
-  background: url("assets/mockup.png") center no-repeat;
   background-size: cover;
-  margin: 0 50px;
+  background: url("assets/mockup.png") center no-repeat;
+  display: flex;
+  justify-content: center;
+  margin: 0 20px;
+  padding: 20px;
 }
 
 @media all and (min-width: 481px) {
@@ -219,25 +216,25 @@ main {
 
 
 .summary-text {
-  font-family: 'Nixie One', bold;
-  text-align: center;
   color: white;
+  font-family: 'Nixie One', bold;
   font-weight: 800;
+  text-align: center;
 }
 
 @media all and (min-width: 820px) {
   .summary-text {
     margin-left: 400px;
-    width: 400px;
     text-align: left;
+    width: 400px;
   }
 }
 
 footer {
   background: black;
-  padding: 30px 0;
   color: white;
   font-family: 'Nixie One', bold;
+  padding: 30px 0;
 }
 
 .footer-links {

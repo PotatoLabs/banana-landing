@@ -62,7 +62,6 @@ main {
   position: absolute;
   top: 0;
   left: 0;
-  bottom: 0;
   right: 0;
 }
 
@@ -102,6 +101,7 @@ main {
   justify-content: space-around;
   align-items: center;
   padding: 0 20%;
+  margin-bottom: 30px;
 }
 
 .icon-set {
@@ -117,6 +117,21 @@ main {
 .icons-section hr {
   margin: 0 20%;
   border-top: 1px solid black;
+}
+
+.summary-section {
+  display: flex;
+  padding: 40px;
+  justify-content: center;
+  background: url("assets/mockup.png") center no-repeat;
+  background-size: cover;
+  margin: 0 50px;
+}
+
+.summary-text {
+  width: 400px;
+  margin-left: 300px;
+  font-family: 'Nixie One', bold;
 }
 
 footer {

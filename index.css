@@ -29,7 +29,13 @@ main {
 }
 
 .banner-caption {
-  margin-bottom: 20px;
+  margin: 0 20px 35px 20px;
+}
+
+@media all and (min-width: 481px) {
+  .banner-caption {
+    margin: 0 0 20 0;
+  }
 }
 
 .app-store {
@@ -38,9 +44,16 @@ main {
 
 .video-message {
   color: white;
-  height: 240px;
-  width: 50%;
+  height: 100%;
+  width: 100%;
   text-align: center;
+}
+
+@media all and (min-width: 481px) {
+  .video-message {
+    height: 240px;
+    width: 50%;
+  }
 }
 
 .video-message h3 {
@@ -52,39 +65,68 @@ main {
 
 .video-message p {
   font-family: 'Nixie One', bold;
-  font-size: 28px;
+  font-size: 15px;
   font-weight: 100;
   line-height: 26px;
+}
+
+@media all and (min-width: 481px) {
+  .video-message p {
+    font-size: 28px;
+  }
 }
 
 .video-container {
   z-index: -1;
   position: absolute;
-  top: 0;
   left: 0;
   right: 0;
 }
 
+@media all and (min-width: 481px) {
+  .video-container {
+    top: 0;
+  }
+}
+
 .banner {
-  height: 538px;
+  height: 299px;
   width: 100%;
   display: flex;
   align-items: center;
   justify-content: center;
 }
 
+@media all and (min-width: 481px) {
+  .banner {
+    height: 538px;
+  }
+}
+
 .about-section, .icon-row {
   background: white;
-  padding: 50px;
   font-family: 'Nixie One', bold;
+}
+
+.about-section {
+  padding: 0px;
+  @media screen (min-device-width: 481px) {
+    padding: 50px;
+  }
 }
 
 .about-text {
   text-align: center;
-  margin: 0 10%;
+  margin: 0 7%;
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+
+@media all and (min-width: 481px) {
+  .about-text {
+    margin: 0 10%;
+  }
 }
 
 .about-section h3 {
@@ -99,9 +141,16 @@ main {
 .icon-row {
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
   align-items: center;
   padding: 0 20%;
   margin-bottom: 30px;
+}
+
+@media all and (min-width: 481px) {
+  .icon-row {
+    flex-direction: row;
+  }
 }
 
 .icon-set {
@@ -125,13 +174,25 @@ main {
   justify-content: center;
   background: url("assets/mockup.png") center no-repeat;
   background-size: cover;
-  margin: 0 50px;
+}
+
+@media all and (min-width: 481px) {
+  .summary-section {
+    margin: 0 50px;
+  }
 }
 
 .summary-text {
-  width: 400px;
-  margin-left: 300px;
   font-family: 'Nixie One', bold;
+  text-align: center;
+}
+
+@media all and (min-width: 481px) {
+  .summary-text {
+    margin-left: 400px;
+    width: 400px;
+    text-align: left;
+  }
 }
 
 footer {

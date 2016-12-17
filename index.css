@@ -205,7 +205,13 @@ footer {
 .footer-links {
   display: flex;
   justify-content: space-between;
-  margin: 0 35%;
+  margin: 0 25px;
+}
+
+@media all and (min-width: 481px) {
+  .footer-links {
+    margin: 0 35%;
+  }
 }
 
 .footer-links a {
@@ -224,3 +230,16 @@ nav a {
   color: black;
   font-family: 'Nixie One', bold;
 }
+
+.logo-image {
+  width: 50px;
+  height: 50px;
+}
+
+@media all and (min-width: 481px) {
+  .logo-image {
+    width: 70px;
+    height: 70px;
+  }
+}
+

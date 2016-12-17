@@ -197,6 +197,8 @@ main {
 .summary-text {
   font-family: 'Nixie One', bold;
   text-align: center;
+  color: white;
+  font-weight: 800;
 }
 
 @media all and (min-width: 481px) {

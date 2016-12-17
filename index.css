@@ -85,7 +85,7 @@ main {
 
 .video-container {
   background-size: cover;
-  background: url("assets/poster2.png") center no-repeat;
+  background: url("assets/images/poster2.png") center no-repeat;
   height: 300px;
   left: 0;
   position: absolute;
@@ -201,7 +201,7 @@ main {
 
 .summary-background {
   background-size: cover;
-  background: url("assets/mockup.png") center no-repeat;
+  background: url("assets/images/mockup.png") center no-repeat;
   display: flex;
   justify-content: center;
   margin: 0 20px;

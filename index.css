@@ -19,9 +19,16 @@ header > nav {
   justify-content: space-between;
 }
 
-video {
-  width: 100%;
-  height: 100%;
+.video-container video {
+  display: none;
+}
+
+@media all and (min-width: 481px) {
+  .video-container video {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+  }
 }
 
 main {
@@ -81,11 +88,16 @@ main {
   position: absolute;
   left: 0;
   right: 0;
+  background: url("assets/poster.jpg") center no-repeat;
+  background-size: cover;
+  height: 300px;
 }
 
 @media all and (min-width: 481px) {
   .video-container {
     top: 0;
+    background-image: none;
+    height: inherit;
   }
 }
 

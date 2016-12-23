@@ -230,6 +230,8 @@ main {
   font-family: 'Nixie One', bold;
   font-weight: 800;
   text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  padding: 0 10px;
 }
 
 @media all and (min-width: 820px) {
